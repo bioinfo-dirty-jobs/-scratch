@@ -1,0 +1,28 @@
+<tool id="Convert" name="Conver">
+  <description></description>
+  <command interpreter="python">convert.py -i  $input -l  $num  -r $dx  -o $output</command>
+  <inputs>
+    <param name="input" size="10" type="text" label="ENST00000288602"/>
+	<param  name="num" size="10" type="text" label="100"/>
+	<param  name="dx" size="10" type="text" label="300"/>
+	
+
+
+
+
+
+  </inputs>
+
+
+  <outputs>
+    <data format="txt" name="output" label="Converted"/>
+  </outputs>
+
+<help>
+
+</help>
+
+
+
+
+</tool>

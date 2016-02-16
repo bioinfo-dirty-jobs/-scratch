@@ -1,0 +1,26 @@
+<tool id="Convert" name="Conver">
+  <description></description>
+  <command interpreter="python">convert.py -i  $input    -o $output</command>
+  <inputs>
+    
+	
+    <param format="txt" name="input" type="data" label="VCF file (see help for format)"/>
+
+
+
+
+  </inputs>
+
+
+  <outputs>
+    <data format="txt" name="output" label="Converted"/>
+  </outputs>
+
+<help>
+
+</help>
+
+
+
+
+</tool>

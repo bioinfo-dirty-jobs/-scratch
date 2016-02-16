@@ -1,0 +1,1 @@
+cp -r *.py  /opt/galaxy/galaxy/tools/BIO/

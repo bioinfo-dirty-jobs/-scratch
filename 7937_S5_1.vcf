@@ -1,0 +1,34 @@
+##fileformat=VCFv4.1
+##FORMAT=<ID=GQX,Number=1,Type=Integer,Description="Minimum of {Genotype quality assuming variant position,Genotype quality assuming non-variant position}">
+##FORMAT=<ID=AD,Number=.,Type=Integer,Description="Allelic depths for the ref and alt alleles in the order listed">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth (reads with MQ=255 or with bad mates are filtered)">
+##FORMAT=<ID=GQ,Number=1,Type=Float,Description="Genotype Quality">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification">
+##FORMAT=<ID=VF,Number=1,Type=Float,Description="Variant Frequency, the ratio of the sum of the called variant depth to the total depth">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes, for each ALT allele, in the same order as listed">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency, for each ALT allele, in the same order as listed">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth; some reads may have been filtered">
+##INFO=<ID=QD,Number=1,Type=Float,Description="Variant Confidence/Quality by Depth">
+##FILTER=<ID=LowVariantFreq,Description="Low variant frequency < 0.20">
+##FILTER=<ID=LowGQ,Description="GQ below < 30.00">
+##FILTER=<ID=R8,Description="IndelRepeatLength is greater than 8">
+##UnifiedGenotyper="analysis_type=UnifiedGenotyper input_file=[D:\Illumina\MiSeqAnalysis\150520_M70226_0004_000000000-D0GJP\Data\Intensities\BaseCalls\Alignment\11183_S6.bam, D:\Illumina\MiSeqAnalysis\150520_M70226_0004_000000000-D0GJP\Data\Intensities\BaseCalls\Alignment\11309_S7.bam, D:\Illumina\MiSeqAnalysis\150520_M70226_0004_000000000-D0GJP\Data\Intensities\BaseCalls\Alignment\11429_S11.bam, D:\Illumina\MiSeqAnalysis\150520_M70226_0004_000000000-D0GJP\Data\Intensities\BaseCalls\Alignment\7937_S5.bam] read_buffer_size=null phone_home=NO_ET gatk_key=null read_filter=[] intervals=[gi|270132515|ref|ENST00000356175|:1-12381] excludeIntervals=null interval_set_rule=UNION interval_merging=ALL reference_sequence=C:\Illumina\MiSeq Reporter\Genomes\nf1\UCSC\hg19\Sequence\WholeGenomeFasta\NF1.fa nonDeterministicRandomSeed=false downsampling_type=BY_SAMPLE downsample_to_fraction=null downsample_to_coverage=5000 baq=OFF baqGapOpenPenalty=40.0 performanceLog=null useOriginalQualities=false BQSR=null quantize_quals=-1 defaultBaseQualities=-1 validation_strictness=SILENT unsafe=null num_threads=1 num_cpu_threads=null num_io_threads=null num_bam_file_handles=null read_group_black_list=null pedigree=[] pedigreeString=[] pedigreeValidationType=STRICT allow_intervals_with_unindexed_bam=false logging_level=INFO log_to_file=null help=false genotype_likelihoods_model=BOTH p_nonref_model=EXACT heterozygosity=0.0010 pcr_error_rate=1.0E-4 genotyping_mode=DISCOVERY output_mode=EMIT_VARIANTS_ONLY standard_min_confidence_threshold_for_calling=10.0 standard_min_confidence_threshold_for_emitting=10.0 noSLOD=false annotateNDA=false alleles=(RodBinding name= source=UNBOUND) min_base_quality_score=17 max_deletion_fraction=0.05 max_alternate_alleles=3 min_indel_count_for_genotyping=5 min_indel_fraction_per_sample=0.25 indel_heterozygosity=1.25E-4 indelGapContinuationPenalty=10 indelGapOpenPenalty=45 indelHaplotypeSize=80 noBandedIndel=false indelDebug=false ignoreSNPAlleles=false includeGVCFData=false dbsnp=(RodBinding name= source=UNBOUND) comp=[] out=org.broadinstitute.sting.gatk.io.stubs.VCFWriterStub NO_HEADER=org.broadinstitute.sting.gatk.io.stubs.VCFWriterStub sites_only=org.broadinstitute.sting.gatk.io.stubs.VCFWriterStub debug_file=null metrics_file=null annotation=[] excludeAnnotation=[] filter_mismatching_base_and_quals=false"
+##contig=<ID=gi|270132515|ref|ENST00000356175|,length=12381>
+##reference=file://C:\Illumina\MiSeq Reporter\Genomes\nf1\UCSC\hg19\Sequence\WholeGenomeFasta\NF1.fa
+##source=GATK 1.6
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	7937
+gi|270132515|ref|ENST00000356175|	3409	.	T	TG	47.73	LowGQ	AC=2;AF=1.0;AN=2;DP=2;QD=23.86	GT:AD:DP:GQ:PL:VF:GQX	1/1:0,2:2:6.02:88,6,0:1.000:6
+gi|270132515|ref|ENST00000356175|	3543	.	A	C	35.77	LowGQ	AC=2;AF=1.0;AN=2;DP=2;QD=17.88	GT:AD:DP:GQ:PL:VF:GQX	1/1:0,2:2:6.02:67,6,0:1.000:6
+gi|270132515|ref|ENST00000356175|	3548	.	A	T	35.77	LowGQ	AC=2;AF=1.0;AN=2;DP=2;QD=17.88	GT:AD:DP:GQ:PL:VF:GQX	1/1:0,2:2:6.02:67,6,0:1.000:6
+gi|270132515|ref|ENST00000356175|	3551	.	AG	A	50.73	LowGQ	AC=2;AF=1.0;AN=2;DP=2;QD=25.36	GT:AD:DP:GQ:PL:VF:GQX	1/1:0,2:2:6.02:91,6,0:1.000:6
+gi|270132515|ref|ENST00000356175|	3555	.	G	T	35.77	LowGQ	AC=2;AF=1.0;AN=2;DP=2;QD=17.88	GT:AD:DP:GQ:PL:VF:GQX	1/1:0,2:2:6.02:67,6,0:1.000:6
+gi|270132515|ref|ENST00000356175|	4490	.	C	A	1465.01	LowVariantFreq	AC=1;AF=0.5;AN=2;DP=1136;QD=1.29	GT:AD:DP:GQ:PL:VF:GQX	0/1:1015,121:1193:99:1495,0,28064:0.107:99
+gi|270132515|ref|ENST00000356175|	4491	.	C	T	1350.01	LowVariantFreq	AC=1;AF=0.5;AN=2;DP=995;QD=1.36	GT:AD:DP:GQ:PL:VF:GQX	0/1:863,132:995:99:1380,0,23770:0.133:99
+gi|270132515|ref|ENST00000356175|	4492	.	A	C	2759.01	PASS	AC=1;AF=0.5;AN=2;DP=650;QD=4.24	GT:AD:DP:GQ:PL:VF:GQX	0/1:513,137:655:99:2789,0,14876:0.211:99
+gi|270132515|ref|ENST00000356175|	4495	.	T	C	2593.01	LowVariantFreq	AC=1;AF=0.5;AN=2;DP=827;QD=3.14	GT:AD:DP:GQ:PL:VF:GQX	0/1:684,143:830:99:2623,0,18407:0.173:99
+gi|270132515|ref|ENST00000356175|	4496	.	G	A	1480.01	LowVariantFreq	AC=1;AF=0.5;AN=2;DP=903;QD=1.64	GT:AD:DP:GQ:PL:VF:GQX	0/1:789,114:903:99:1510,0,22612:0.126:99
+gi|270132515|ref|ENST00000356175|	4497	.	G	A	796.01	LowVariantFreq	AC=1;AF=0.5;AN=2;DP=919;QD=0.87	GT:AD:DP:GQ:PL:VF:GQX	0/1:823,96:921:99:826,0,23380:0.104:99
+gi|270132515|ref|ENST00000356175|	4498	.	T	C	203.01	LowVariantFreq	AC=1;AF=0.5;AN=2;DP=928;QD=0.22	GT:AD:DP:GQ:PL:VF:GQX	0/1:848,80:929:99:233,0,24067:0.086:99
+gi|270132515|ref|ENST00000356175|	6077	.	G	A	51010.01	PASS	AC=1;AF=0.5;AN=2;DP=3531;QD=14.45	GT:AD:DP:GQ:PL:VF:GQX	0/1:1652,1879:3536:99:51010,0,43273:0.532:99
